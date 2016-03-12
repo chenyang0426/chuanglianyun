@@ -20,7 +20,7 @@
             .img-thumbnail {
                 background-color: transparent;
                 border: none;
-                max-width: 200px;
+                max-width: 120px;
             }
             .img-circle {
                 max-width: 100%;
@@ -117,7 +117,7 @@
         <section>
             <div class="container-fluid">
                 <div class="col-xs-6">
-                    <div class="card">
+                    <div class="card text-center">
                         <span class="thumbnail">
                             <img src="../images/jason.jpg" alt="钉钉部署专家">
                         </span>
@@ -126,7 +126,7 @@
                     </div>
                 </div>
                 <div class="col-xs-6">
-                    <div class="card">
+                    <div class="card text-center">
                         <span class="thumbnail">
                             <img src="../images/leo.jpg" alt="钉钉部署专家">
                         </span>
@@ -135,7 +135,7 @@
                     </div>
                 </div>
                 <div class="col-xs-6">
-                    <div class="card">
+                    <div class="card text-center">
                         <span class="thumbnail">
                             <img src="../images/yzq.jpg" alt="钉钉部署专家">
                         </span>
@@ -144,7 +144,7 @@
                     </div>
                 </div>
                 <div class="col-xs-6">
-                    <div class="card">
+                    <div class="card text-center">
                         <span class="thumbnail">
                             <img src="../images/wg.jpg" alt="钉钉部署专家">
                         </span>
@@ -153,7 +153,7 @@
                     </div>
                 </div>
                 <div class="col-xs-6">
-                    <div class="card">
+                    <div class="card text-center">
                         <span class="thumbnail">
                             <img src="../images/px.png" alt="钉钉部署专家">
                         </span>
@@ -162,11 +162,29 @@
                     </div>
                 </div>
                 <div class="col-xs-6">
-                    <div class="card">
+                    <div class="card text-center">
                         <span class="thumbnail">
                             <img src="../images/yy.jpg" alt="钉钉部署专家">
                         </span>
                         <div class="text-center"><strong>陆羽勇</strong></div>
+                        <h6 class="text-center">钉钉部署专家</h6>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="card text-center">
+                        <span class="thumbnail">
+                            <img src="../images/fjc.jpg" alt="钉钉部署专家">
+                        </span>
+                        <div class="text-center"><strong>冯金成</strong></div>
+                        <h6 class="text-center">钉钉部署专家</h6>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="card text-center">
+                        <span class="thumbnail">
+                            <img src="../images/john.jpg" alt="钉钉部署专家">
+                        </span>
+                        <div class="text-center"><strong>杨晨阳</strong></div>
                         <h6 class="text-center">钉钉部署专家</h6>
                     </div>
                 </div>
@@ -185,7 +203,7 @@
                 <div id="close-play">
                     <span class="glyphicon glyphicon-remove"></span>
                 </div>
-                <video id="ding-video" poster="http://gtms04.alicdn.com/tps/i4/TB1.lpWKpXXXXcwXVXXA9PyWVXX-1277-720.png" loop muted="true" width="100%" autobuffer autoplay>
+                <video id="ding-video" poster="http://gtms04.alicdn.com/tps/i4/TB1.lpWKpXXXXcwXVXXA9PyWVXX-1277-720.png" loop muted="true" width="100%">
                     <source src="http://vodcdn.video.taobao.com/oss/ali-video/2b8b0b5f46a5a01145e3ae3e7fcaf08f/video.mp4" type="video/mp4">
                 </video>
             </div>
@@ -208,6 +226,7 @@
             $('#play-btn').on('click', function () {
                 dingVideo.muted = false;
                 dingVideo.loop = false;
+                dingVideo.play();
                 $('.content_box').hide();
                 $('#close-play').show();
             });
@@ -217,7 +236,7 @@
                 $('.content_box').show();
                 $('#close-play').hide();
                 dingVideo.loop = true;
-                dingVideo.play();
+                dingVideo.stop();
             });
             });
         </script>
